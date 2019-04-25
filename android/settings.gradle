@@ -1,0 +1,3 @@
+rootProject.name = 'clonegojek'
+
+include ':app'
