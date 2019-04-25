@@ -1,57 +1,86 @@
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default class App extends Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
-        <View style={{ backgroundColor: 'blue', flex: 1 }} />
-        <View
-          style={{ height: 54, backgroundColor: 'pink', flexDirection: 'row' }}>
+        <View style={{ backgroundColor: 'pink', flex: 1 }} />
+        <View style={{ height: 54, flexDirection: 'row' }}>
           <View
             style={{
-              backgroundColor: 'green',
               alignItems: 'center',
               justifyContent: 'center',
               flex: 1
             }}>
-            <Text>Home</Text>
+            <Image
+              source={require('./icons/home.png')}
+              style={{ width: 26, height: 26 }}
+            />
+            <Text
+              style={{
+                fontSize: 10,
+                color: '#545454',
+                marginTop: 4
+              }}>
+              Home
+            </Text>
           </View>
           <View
             style={{
-              backgroundColor: 'green',
               alignItems: 'center',
               justifyContent: 'center',
               flex: 1
             }}>
-            <Text>Orders</Text>
+            <Image
+              source={require('./icons/order.png')}
+              style={{ width: 26, height: 26 }}
+            />
+            <Text style={{ fontSize: 10, color: '#545454', marginTop: 4 }}>
+              Orders
+            </Text>
           </View>
           <View
             style={{
-              backgroundColor: 'green',
               alignItems: 'center',
               justifyContent: 'center',
               flex: 1
             }}>
-            <Text>Help</Text>
+            <Image
+              source={require('./icons/help.png')}
+              style={{ width: 26, height: 26 }}
+            />
+            <Text style={{ fontSize: 10, color: '#545454', marginTop: 4 }}>
+              Help
+            </Text>
           </View>
           <View
             style={{
-              backgroundColor: 'green',
               alignItems: 'center',
               justifyContent: 'center',
               flex: 1
             }}>
-            <Text>Inbox</Text>
+            <Image
+              source={require('./icons/inbox.png')}
+              style={{ width: 26, height: 26 }}
+            />
+            <Text style={{ fontSize: 10, color: '#545454', marginTop: 4 }}>
+              Inbox
+            </Text>
           </View>
           <View
             style={{
-              backgroundColor: 'green',
               alignItems: 'center',
               justifyContent: 'center',
               flex: 1
             }}>
-            <Text>Account</Text>
+            <Image
+              source={require('./icons/account.png')}
+              style={{ width: 26, height: 26 }}
+            />
+            <Text style={{ fontSize: 10, color: '#545454', marginTop: 4 }}>
+              Account
+            </Text>
           </View>
         </View>
       </View>
